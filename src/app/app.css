@@ -1,0 +1,135 @@
+:host {
+  display: block;
+  min-height: 100vh;
+}
+
+.page-shell {
+  width: min(100% - 2.5rem, 980px);
+  margin: 0 auto;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem 0;
+  border-bottom: 1px solid #e5e0d5;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #263a35;
+  font-size: 0.97rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  color: #fffefa;
+  background: #426252;
+  border-radius: 10px 10px 10px 3px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  place-items: center;
+}
+
+.brand-light {
+  color: #7f8879;
+  font-weight: 500;
+}
+
+.topbar-note {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #777d72;
+  font-size: 0.78rem;
+}
+
+.topbar-note span {
+  width: 6px;
+  height: 6px;
+  background: #d4a66b;
+  border-radius: 50%;
+}
+
+.intro {
+  padding: 3.3rem 0 1.8rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: #85887c;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+h1 {
+  margin: 0;
+  color: #263a35;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.35rem, 6vw, 3.55rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+h1 em {
+  color: #71836e;
+  font-weight: 400;
+}
+
+.intro-copy {
+  margin: 1rem 0 0;
+  color: #777d72;
+  font-size: 0.91rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(225px, 0.8fr);
+  align-items: stretch;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem 0 2.5rem;
+  color: #929287;
+  font-size: 0.72rem;
+}
+
+@media (max-width: 680px) {
+  .page-shell {
+    width: min(100% - 1.5rem, 980px);
+  }
+
+  .intro {
+    padding-top: 2.5rem;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 420px) {
+  .topbar-note {
+    font-size: 0.68rem;
+  }
+
+  .page-footer {
+    flex-direction: column;
+  }
+}

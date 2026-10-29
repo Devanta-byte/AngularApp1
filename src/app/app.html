@@ -1,0 +1,29 @@
+<div class="page-shell">
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Profile home">
+      <span class="brand-mark">a</span>
+      <span>little<span class="brand-light">profile</span></span>
+    </a>
+    <span class="topbar-note"><span></span> A small space to say hello</span>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <p class="eyebrow">WELCOME TO MY CORNER</p>
+      <h1>Here’s a little<br /><em>about me.</em></h1>
+      <p class="intro-copy">A few things I’m learning, loving, and working on lately.</p>
+    </section>
+
+    <app-user-card [user]="user"></app-user-card>
+
+    <section class="details-grid" aria-label="Profile details">
+      <app-user-bio [bio]="user.bio" (bioChanged)="updateBio($event)"></app-user-bio>
+      <app-user-status [isOnline]="user.isOnline" (statusChanged)="updateStatus($event)"></app-user-status>
+    </section>
+
+    <footer class="page-footer">
+      <span>Made with curiosity</span>
+      <span>MWD4B · Angular Assignment 1</span>
+    </footer>
+  </main>
+</div>

@@ -1,0 +1,24 @@
+<section class="bio-card" aria-labelledby="bio-title">
+  <div class="bio-heading">
+    <div>
+      <p class="eyebrow">A LITTLE INTRO</p>
+      <h2 id="bio-title">About me</h2>
+    </div>
+    @if (!isEditing) {
+      <button type="button" class="edit-button" (click)="startEditing()">Edit bio</button>
+    }
+  </div>
+
+  @if (isEditing) {
+    <div class="editor">
+      <label for="bio-input">Your bio</label>
+      <textarea id="bio-input" name="bio" [(ngModel)]="draftBio" rows="4" maxlength="240"></textarea>
+      <div class="editor-actions">
+        <button type="button" class="save-button" (click)="saveBio()">Save changes</button>
+        <button type="button" class="cancel-button" (click)="cancelEditing()">Cancel</button>
+      </div>
+    </div>
+  } @else {
+    <p class="bio-text">{{ bio }}</p>
+  }
+</section>

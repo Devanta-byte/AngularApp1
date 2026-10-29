@@ -1,0 +1,19 @@
+<article class="profile-card">
+  <div class="photo-wrap">
+    <img class="profile-photo" [src]="user.photoUrl" [alt]="user.name + ' profile photo'" />
+    <span class="photo-decoration" aria-hidden="true">✦</span>
+  </div>
+
+  <div class="profile-copy">
+    <p class="eyebrow">STUDENT PROFILE</p>
+    <h2>{{ user.name }}</h2>
+    <p class="course">{{ user.course }}</p>
+    <div class="profile-facts">
+      <span><strong>{{ user.age }}</strong> years old</span>
+      <span class="fact-dot" aria-hidden="true"></span>
+      <span>{{ user.location }}</span>
+    </div>
+  </div>
+
+  <div class="member-tag"><span></span> MWD4B</div>
+</article>

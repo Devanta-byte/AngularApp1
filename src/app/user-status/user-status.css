@@ -1,0 +1,96 @@
+:host {
+  display: block;
+}
+
+.status-card {
+  height: 100%;
+  padding: 1.5rem;
+  background: #fffefa;
+  border: 1px solid #e9e4d9;
+  border-radius: 20px;
+}
+
+.card-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  color: #8a8b7b;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+h2 {
+  margin: 0;
+  color: #263a35;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.status-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  color: #416455;
+  background: #eaf0e7;
+  border-radius: 50%;
+  font-size: 1.35rem;
+  place-items: center;
+}
+
+.status-line {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+  color: #263a35;
+  font-weight: 700;
+}
+
+.status-dot {
+  width: 9px;
+  height: 9px;
+  background: #5c9b6e;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #e7f2e8;
+}
+
+.status-dot.offline {
+  background: #a39f91;
+  box-shadow: 0 0 0 4px #efeee9;
+}
+
+.status-hint {
+  margin: 0.45rem 0 1.2rem 1.4rem;
+  color: #7f8177;
+  font-size: 0.82rem;
+}
+
+.status-button {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  color: #314840;
+  background: #edf1e9;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+.status-button:hover {
+  background: #dfe8dc;
+  transform: translateY(-1px);
+}
+
+.status-button:focus-visible {
+  outline: 3px solid #bbd3b8;
+  outline-offset: 2px;
+}

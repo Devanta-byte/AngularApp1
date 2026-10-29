@@ -1,0 +1,19 @@
+<section class="status-card" aria-labelledby="status-title">
+  <div class="card-heading">
+    <div>
+      <p class="eyebrow">RIGHT NOW</p>
+      <h2 id="status-title">Availability</h2>
+    </div>
+    <span class="status-icon" aria-hidden="true">◌</span>
+  </div>
+
+  <div class="status-line">
+    <span class="status-dot" [class.offline]="!isOnline"></span>
+    <span>{{ isOnline ? 'Online' : 'Offline' }}</span>
+  </div>
+  <p class="status-hint">{{ isOnline ? 'Open to a quick chat.' : 'Taking a little break.' }}</p>
+
+  <button type="button" class="status-button" (click)="toggleStatus()">
+    Set {{ isOnline ? 'offline' : 'online' }}
+  </button>
+</section>
