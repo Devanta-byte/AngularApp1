@@ -8,8 +8,9 @@
   </div>
 
   <div class="status-line">
-    <span class="status-dot" [class.offline]="!isOnline"></span>
-    <span>{{ isOnline ? 'Online' : 'Offline' }}</span>
+    <span class="status-label" [class.offline]="!isOnline">
+      {{ isOnline ? 'Online' : 'Offline' }}
+    </span>
   </div>
   <p class="status-hint">{{ isOnline ? 'Open to a quick chat.' : 'Taking a little break.' }}</p>
 

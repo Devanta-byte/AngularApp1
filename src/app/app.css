@@ -46,18 +46,8 @@
 }
 
 .topbar-note {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   color: #777d72;
   font-size: 0.78rem;
-}
-
-.topbar-note span {
-  width: 6px;
-  height: 6px;
-  background: #d4a66b;
-  border-radius: 50%;
 }
 
 .intro {

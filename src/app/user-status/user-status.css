@@ -44,29 +44,26 @@ h2 {
 }
 
 .status-line {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
   margin-top: 1.5rem;
-  color: var(--ink);
+}
+
+.status-label {
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  color: var(--blue-dark);
+  background: var(--blue-soft);
+  border-radius: 6px;
+  font-size: 0.85rem;
   font-weight: 700;
 }
 
-.status-dot {
-  width: 9px;
-  height: 9px;
-  background: #5c9b6e;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px #e7f2e8;
-}
-
-.status-dot.offline {
-  background: #a39f91;
-  box-shadow: 0 0 0 4px #efeee9;
+.status-label.offline {
+  color: #666a73;
+  background: #eceef2;
 }
 
 .status-hint {
-  margin: 0.45rem 0 1.2rem 1.4rem;
+  margin: 0.45rem 0 1.2rem;
   color: #7f8177;
   font-size: 0.82rem;
 }
