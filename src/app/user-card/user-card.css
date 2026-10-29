@@ -11,7 +11,7 @@
   padding: 2rem;
   overflow: hidden;
   color: #fffdf9;
-  background: #263a35;
+  background: var(--blue-dark);
   border-radius: 24px;
 }
 
@@ -48,9 +48,9 @@
   display: grid;
   width: 35px;
   height: 35px;
-  color: #263a35;
+  color: var(--blue-dark);
   background: #f1bd74;
-  border: 3px solid #263a35;
+  border: 3px solid var(--blue-dark);
   border-radius: 50%;
   place-items: center;
 }

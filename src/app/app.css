@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  color: #263a35;
+  color: var(--ink);
   font-size: 0.97rem;
   font-weight: 800;
   letter-spacing: -0.04em;
@@ -32,7 +32,7 @@
   width: 30px;
   height: 30px;
   color: #fffefa;
-  background: #426252;
+  background: var(--blue);
   border-radius: 10px 10px 10px 3px;
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 1.2rem;
@@ -74,7 +74,7 @@
 
 h1 {
   margin: 0;
-  color: #263a35;
+  color: var(--ink);
   font-family: Georgia, 'Times New Roman', serif;
   font-size: clamp(2.35rem, 6vw, 3.55rem);
   font-weight: 500;
@@ -83,7 +83,7 @@ h1 {
 }
 
 h1 em {
-  color: #71836e;
+  color: var(--blue);
   font-weight: 400;
 }
 

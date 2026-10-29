@@ -26,7 +26,7 @@
 
 h2 {
   margin: 0;
-  color: #263a35;
+  color: var(--ink);
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 1.5rem;
   font-weight: 500;
@@ -36,8 +36,8 @@ h2 {
   display: grid;
   width: 34px;
   height: 34px;
-  color: #416455;
-  background: #eaf0e7;
+  color: var(--blue-dark);
+  background: var(--blue-soft);
   border-radius: 50%;
   font-size: 1.35rem;
   place-items: center;
@@ -48,7 +48,7 @@ h2 {
   align-items: center;
   gap: 0.55rem;
   margin-top: 1.5rem;
-  color: #263a35;
+  color: var(--ink);
   font-weight: 700;
 }
 
@@ -74,8 +74,8 @@ h2 {
 .status-button {
   width: 100%;
   padding: 0.7rem 0.9rem;
-  color: #314840;
-  background: #edf1e9;
+  color: var(--blue-dark);
+  background: var(--blue-soft);
   border: 0;
   border-radius: 10px;
   cursor: pointer;
@@ -86,11 +86,11 @@ h2 {
 }
 
 .status-button:hover {
-  background: #dfe8dc;
+  background: var(--blue-focus);
   transform: translateY(-1px);
 }
 
 .status-button:focus-visible {
-  outline: 3px solid #bbd3b8;
+  outline: 3px solid var(--blue-focus);
   outline-offset: 2px;
 }
