@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './user-bio.css',
 })
 export class UserBioComponent {
+  // Show the bio from the parent and send saved edits back to it.
   @Input() bio = '';
   @Output() bioChanged = new EventEmitter<string>();
 

@@ -94,8 +94,7 @@ h2 {
   color: #fff;
 }
 
-.fact-dot,
-.member-tag span {
+.fact-dot {
   width: 4px;
   height: 4px;
   background: #d9b98c;
